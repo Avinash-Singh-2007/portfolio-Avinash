@@ -1,210 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avinash | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">AVINASH . DEV</div>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Avinash</a>
+    <!-- Hero Section -->
+    <div id="particles-js">
+        <section class="hero">
+            <div class="hero-left">
+                <p class="tagline">Full Stack Web Developer</p>
+                <h1>Hi, I am <br><span>Avinash Singh</span> <br>I build responsive & modern websites.</h1>
+                <div class="buttons">
+                    <a href="#contact" class="btn primary">Contact</a>
+                    <a href="./main sec img.png" class="btn outline" download>Download CV</a>
                 </div>
+            </div>
+            <div class="hero-right">
+                <div class="bg-skew"></div>
+                <img src="./main sec img.png" alt="Avinash" />
+            </div>
+        </section>
+    </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="about.jpeg" alt="Profile Picture">
                 </div>
+                <div class="about-content">
+                    <h5 class="section-subtitle">MY INTRODUCTION</h5>
+                    <h2>About Me</h2>
+                    <p>
+                        I'm Avinash Singh, a full stack developer from Delhi NCR.
+                        I enjoy building responsive and user-friendly websites.
+                        Skilled in HTML, CSS, and JavaScript with hands-on project experience.
+                        Created a fashion e-commerce site and personal portfolio.
+                        I'm passionate about clean UI and mobile-first design.
+                        Looking to grow in a tech-driven team and learn more every day.
+                    </p>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+                    <p><em>“Design is intelligence made visible. Code brings it to life.”</em></p>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Avinash</span><br> Web Designer</h1>
 
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/avinash-singh-355a40329/" target="_main" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    
-                    <a href="https://github.com/Avinash-Singh-2007" target="_main" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="115" href="assets/img/me-removebg-preview.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/me.png" alt="">
+                    <div class="about-details">
+                        <p><strong>Name:</strong> Avinash Singh</p>
+                        <p><strong>Date of birth:</strong> May 20, 2007</p>
+                        <p><strong>Address:</strong> Vaishali, Gzb, India</p>
+                        <p><strong>Pin code:</strong> 201010</p>
+                        <p><strong>Email:</strong> avinashsinghsemail@gmail.com</p>
+                        <p><strong>Phone:</strong> +91-9354805158</p>
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Avinash</h2>
-                        <p class="about__text">I am a frontend web developer skilled in HTML, CSS, and JavaScript. I create responsive, user-friendly websites with clean, efficient code and strong attention to design and usability. Passionate about web development, I strive to deliver engaging digital experiences and continuously grow my knowledge in modern frontend technologies.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text"></p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    <div class="interests">
+                        <span><i class="fas fa-music"></i> Music</span>
+                        <span><i class="fas fa-plane"></i> Travel</span>
+                        <span><i class="fas fa-film"></i> Movie</span>
+                        <span><i class="fas fa-futbol"></i> Sports</span>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+    <!-- skills-section -->
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="html (2).png" class="skill-icon" alt="HTML" />
+                <h4>HTML</h4>
+                <div class="level-label">95%</div>
+            </div>
+            <div class="skill-card">
+                <img src="css.png" class="skill-icon" alt="CSS" />
+                <h4>CSS</h4>
+                <div class="level-label">92%</div>
+            </div>
+            <div class="skill-card">
+                <img src="javascript.png" class="skill-icon" alt="JavaScript" />
+                <h4>JavaScript</h4>
+                <div class="level-label">80%</div>
+            </div>
+            <div class="skill-card">
+                <img src="bootstrap.png" class="skill-icon" alt="Bootstrap" />
+                <h4>Bootstrap</h4>
+                <div class="level-label">90%</div>
+            </div>
+            <div class="skill-card">
+                <img src="react.png" class="skill-icon" alt="React" />
+                <h4>React</h4>
+                <div class="level-label">78%</div>
+            </div>
+            <!-- <div class="skill-card">
+                <img src="figma.png" class="skill-icon" alt="Photoshop" />
+                <h4>Figma</h4>
+                <div class="level-label">60%</div>
+            </div> -->
+            <!-- <div class="skill-card">
+                <img src="images/wordpress.png" class="skill-icon" alt="WordPress" />
+                <h4>WordPress</h4>
+                <div class="level-label">75%</div>
+            </div>
+            <div class="skill-card">
+                <img src="images/seo.png" class="skill-icon" alt="SEO" />
+                <h4>SEO</h4>
+                <div class="level-label">70%</div>
+            </div> -->
+        </div>
+
+        <!-- Project card -->
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <img src="project2.png" alt="Project 2" />
+                    <div class="project-info">
+                        <h3>Myntra Clone</h3>
+                        <p>HTML, CSS, JS</p>
+                        <a href="https://avinash-singh-2007.github.io/myntra-clone-by-Avinash/" target="_blank">View Project</a>
+                    </div>
                 </div>
-            </section>
+                <div class="project-card">
+                    <img src="project1.jpeg" alt="Project 1" />
+                    <div class="project-info">
+                        <h3>Small Projects</h3>
+                        <p>HTML, CSS, JS</p>
+                        <a href="https://avinash-singh-2007.github.io/Resume/" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project 0.png" alt="Project 0" />
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>HTML, CSS, JS</p>
+                        <a href="#" target="_blank">View Project</a>
+                    </div>
+                </div>
 
-            <!--===== CONTACT =====-->
-          <section class="contact section" id="contact">
-    <h2 class="section-title">Contact</h2>
+                <!-- Add more cards if needed -->
+            </div>
+        </section>
 
-    <div class="contact__container bd-grid">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+
+
+        <!-- contact -->
+    <section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="e443f5db-dd5d-4a33-8a72-2ea2548abbfe">
-
-            <input type="text" name="name" placeholder="Name" class="contact__input" required>
-            <input type="email" name="email" placeholder="Email" class="contact__input" required>
-            <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
-            <input type="submit" value="Send" class="contact__button button">
+            
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn primary">Send Message</button>
         </form>
     </div>
 </section>
 
-        </main>
 
-        <!--===== FOOTER =====-->
+
+        <!-- Footer -->
+
         <footer class="footer">
-            <p class="footer__title">Avinash</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/avinash-singh-355a40329/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.instagram.com/avinash.singh.2007/" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://github.com/Avinash-Singh-2007" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            <div class="footer-container">
+                <h3>Avinash.Dev</h3>
+                <p>Crafting Website experiences with code & creativity ✨</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Avinash-Singh-2007" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/avinash-singh-355a40329/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/avinash.singh.2007" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="copyright">© 2025 Avinash Singh. All rights reserved.</p>
             </div>
-            <p class="footer__copy">&#169; Avinash. All rigths reserved</p>
         </footer>
 
+    </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-        
-</script>
-    </body>
+
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.hero-left', { origin: 'left', distance: '50px', duration: 1000, delay: 300 });
+        ScrollReveal().reveal('.hero-right', { origin: 'right', distance: '50px', duration: 1000, delay: 500 });
+        ScrollReveal().reveal('.navbar', { origin: 'top', distance: '20px', duration: 800, delay: 200 });
+        ScrollReveal().reveal('.about-img', { origin: 'left', distance: '50px', duration: 1000, delay: 200 });
+        ScrollReveal().reveal('.about-content', { origin: 'right', distance: '50px', duration: 1000, delay: 300 });
+    </script>
+</body>
+
 </html>
